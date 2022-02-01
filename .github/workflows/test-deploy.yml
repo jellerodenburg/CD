@@ -33,13 +33,11 @@ jobs:
         - name: deploy it
           uses: appleboy/ssh-action@master # An action made to control Linux servers
           with: # We set all our secrets here for the action, these won't be shown in the action logs
-          host: ${{ secrets.HOST }}
-          username: ${{ secrets.USERNAME }}
-          password: ${{ secrets.PASSWORD }}
-          port: ${{ secrets.PORT }}
-          script: |
-            ssh ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}
-            cd ..
-            cd home/CD
-            git pull
-            systemctl restart cd
+            host: ${{ secrets.SSH_HOST }}
+            username: ${{ secrets.USERNAME }}
+            script: |
+              ssh ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}
+              cd ..
+              cd home/CD
+              git pull
+              systemctl restart cd

@@ -3,6 +3,7 @@
 *.zip
 /venv
 /.idea
+.pytest_cache
 
 # (Mac) OS generated files #
 .DS_Store?

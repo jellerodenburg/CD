@@ -18,7 +18,7 @@ def test_redirect(client):
 def test_index(client):
     response = client.get("/")
     assert response.status_code == 200
-    assert b"Hello, world!" in response.data
+    assert b"Hello" in response.data
 
 
 def test_about(client):

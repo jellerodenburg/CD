@@ -12,4 +12,4 @@ Solution: Add flask to requirements.txt
 (optional) Anything of note that you want to share about the process of solving this assignment.
 
 
-![example workflow](https://github.com/jellerodenburg/cd/actions/workflows/run-tests.yml/badge.svg)
+![example workflow](https://github.com/jellerodenburg/CD/actions/workflows/run-test.yml/badge.svg)

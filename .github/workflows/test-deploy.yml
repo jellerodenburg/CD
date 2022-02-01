@@ -38,4 +38,7 @@ jobs:
             key: ${{ secrets.SSH_PRIVATE_KEY }}
             port: ${{ secrets.PORT }}
             script: |
-              ${{ secrets.DEPLOY_SCRIPT }}
+              cd ..
+              cd home/CD
+              git pull
+              systemctl restart cd
